@@ -13,26 +13,32 @@
 <body>
     <nav class="nav-bar">
         <div class="menu-container">
-            <a href="" class="logo">Kitchen</a>
+            <a href="" class="logo">Feast</a>
             <ul class="main-menu">
                 <li class="main-menu__item">
                     <a href="" class="main-menu__link">Home</a>
                 </li>
                 <li class="main-menu__item">
-                    <a href="" class="main-menu__link">Story</a>
+                    <a href="#menu" class="main-menu__link">Menu</a>
                 </li>
                 <li class="main-menu__item">
-                    <a href="" class="main-menu__link">Menu</a>
+                    <a href="#story" class="main-menu__link">Our Story</a>
                 </li>
                 <li class="main-menu__item">
-                    <a href="" class="main-menu__link">Our Updates</a>
+                    <a href="#team" class="main-menu__link">Team</a>
                 </li>
                 <li class="main-menu__item">
-                    <a href="" class="main-menu__link">Contact</a>
+                    <a href="#gallery" class="main-menu__link">Gallery</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#reservation" class="main-menu__link">Contact</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#updates" class="main-menu__link">Updates</a>
                 </li>
             </ul>
             <div class="btn-container">
-                <button class="btn btn--big btn--primary">Reservation</button>
+                <a href="#reservation" class="btn btn--big btn--primary">Reservation</a>
             </div>
         </div>
     </nav>
@@ -53,7 +59,7 @@
                     </div>
                     <span class="header__review-text">From <strong>1,743 </strong>Happy Customers Reviews </span>
                 </div>
-                <button class="btn btn--big btn--primary">Reserve a Table</button>
+                <a href="#reservation" class="btn btn--big btn--primary">Reserve a Table</a>
             </div>
             <div class="video-container">
                 <video autoplay="" loop="" muted="" poster="">
@@ -62,7 +68,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="menu">
             <h2 class="section__title">Our Menu</h2>
             <div class="cards-container">
                 <div class="card">
@@ -265,7 +271,7 @@
             </div>
         </section>
 
-        <section class="res-section">
+        <section class="full-width full-width--restaurant" id="story">
             <div class="res-section__info">
                 <div class="res-section__video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/PZ4pctQMdg4"
@@ -275,7 +281,7 @@
                     </iframe>
                 </div>
                 <div class="res-section__text-container">
-                    <h2 class="res-section__title">Our Soul</h2>
+                    <h2 class="res-section__title">Our Story</h2>
                     <p class="res-section__text">We pride ourselves on offering excellent service and a memorable dining
                         experience. Our team of experienced chefs and friendly staff are dedicated to making your visit
                         as enjoyable as possible. Come and dine with us, and let us take care of everything while you
@@ -283,11 +289,11 @@
                         to serving you soon.</p>
                 </div>
             </div>
-            <button class="btn btn--big btn--primary">Reserve a Table</button>
+            <a href="#reservation" class="btn btn--big btn--primary">Reserve a Table</a>
 
         </section>
 
-        <section class="section">
+        <section class="section" id="team">
             <h2 class="section__title">Our Team</h2>
             <div class="cards-container">
                 <div class="team-card">
@@ -339,6 +345,171 @@
                 </div>
             </div>
         </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-1.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-2.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-3.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-4.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-5.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-6.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-7.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-8.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-9.jpg" alt="">
+            </div>
+
+            <div class="gallery__image-container">
+                <img class="gallery__image" src="./assets/images/restaurant-10.jpg" alt="">
+            </div>
+        </section>
+        <section class="full-width full-width--reservation" id="reservation">
+            <div class="form-container">
+                <form class="form" action="">
+                    <h3 class="form__title">Online Reservation</h3>
+                    <p class="form__text">Booking request <span class="form__text--highlight">+88-123-123456 </span> or
+                        fill out the form</p>
+                    <input class="form__input" type="text" placeholder="Your Name">
+                    <input class="form__input" type="text" placeholder="Phone Number">
+                    <select class="form__select" name="person" id="">
+                        <option value="1" selected>1 Person</option>
+                        <option value="2">2 Person</option>
+                        <option value="3">3 Person</option>
+                        <option value="4">4 Person</option>
+                        <option value="5">5 Person</option>
+                        <option value="6">6 Person</option>
+                        <option value="7">7 Person</option>
+                        <option value="8">8 Person</option>
+                        <option value="9">9 Person</option>
+                        <option value="10">10 Person</option>
+                    </select>
+                    <input class="form__date" type="date" name="" id="">
+                    <select class="form__select" name="person" id="">
+                        <option value="10:00 am" selected>10:00 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="12:00 m">12:00 m</option>
+                        <option value="01:00 pm">01:00 pm</option>
+                        <option value="02:00 pm">02:00 pm</option>
+                        <option value="03:00 pm">03:00 pm</option>
+                        <option value="04:00 pm">04:00 pm</option>
+                        <option value="05:00 pm">05:00 pm</option>
+                        <option value="06:00 pm">06:00 pm</option>
+                        <option value="07:00 pm">07:00 pm</option>
+                        <option value="08:00 pm">08:00 pm</option>
+                        <option value="09:00 pm">09:00 pm</option>
+                        <option value="10:00 pm">10:00 pm</option>
+                    </select>
+                    <textarea class="form__textarea" name="message" id="" cols="60" rows="10"></textarea>
+                    <button class="btn btn--big btn--primary btn--full-width">Reserve a Table</button>
+                </form>
+                <div class="contact">
+                    <h3 class="contact__title">Contact Us</h3>
+                    <p class="contact__label">Booking Request</p>
+                    <p class="contact__phone">+88-123-123456</p>
+                    <p class="contact__label">Location</p>
+                    <p class="contact__info-text">Restaurant St, Feast City<br>New York 9247, US</p>
+                    <p class="contact__label">Lunch Time</p>
+                    <p class="contact__info-text">Monday to Sunday<br>11:00am - 2:30pm </p>
+                    <p class="contact__label">Dinner Time</p>
+                    <p class="contact__info-text">Monday to Sunday<br>5:00pm - 10:30pm </p>
+                    <div class="contact__social-container">
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class='bx bxl-facebook-square contact__social-icon'></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i
+                                class='bx bxl-youtube contact__social-icon'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i
+                                class='bx bxl-instagram-alt contact__social-icon'></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank"><i
+                                class='bx bxl-tiktok contact__social-icon'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="updates">
+            <h2 class="section__title">News & Events</h2>
+            <div class="cards-container">
+                <article class="blog-card">
+                    <img class="blog-card__img" src="./assets/images/blog1.jpg" alt="Healthy meal">
+                    <div class="blog-card__info-container">
+                        <span class="blog-card__category">food</span>
+                        <h6 class="blog-card__title">How to make a healthy meal</h6>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img class="blog-card__img" src="./assets/images/blog3.jpg" alt="Hand-made pasta">
+                    <div class="blog-card__info-container">
+                        <span class="blog-card__category">event</span>
+                        <h6 class="blog-card__title">Open Kitchen: Learn how to make handmade pasta</h6>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img class="blog-card__img" src="./assets/images/blog4.jpg" alt="Shakshuka">
+                    <div class="blog-card__info-container">
+                        <span class="blog-card__category">recipe</span>
+                        <h6 class="blog-card__title">Recipe of the month: Shakshuka</h6>
+                    </div>
+                </article>
+            </div>
+            <a href="http://" class="btn btn--big btn--blog">View our Blog</a>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__info-container">
+                <div class="footer__column">
+                    <h5 class="footer__title">Location</h5>
+                    <p class="footer__text">New York 9247, US</p>
+                    <p class="footer__text">Tel: +88-123-123456</p>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__title">Opening Hours</h5>
+                    <p class="footer__text">Monday - Friday</p>
+                    <p class="footer__text">10:00am - 10:30pm</p>
+                </div>
+                <div class="footer__column">
+                    <h5 class="footer__title">Social</h5>
+                    <div class="contact__social-container">
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class='bx bxl-facebook-square contact__social-icon'></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i
+                                class='bx bxl-youtube contact__social-icon'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i
+                                class='bx bxl-instagram-alt contact__social-icon'></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank"><i
+                                class='bx bxl-tiktok contact__social-icon'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
 
 
     </main>
