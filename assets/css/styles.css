@@ -13,7 +13,7 @@
     --p-color: #717275;
     --border-color: #eaeaea;
     --primary-btn-hover: #bb2d3b;
-    --overlay: rgba(0,0,0,0.7);
+    --overlay: rgba(0, 0, 0, 0.7);
 
     --border-radius-default: .25rem;
 
@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -119,7 +120,7 @@ img {
 
 .nav-bar {
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background: transparent;
     position: absolute;
     z-index: 3;
@@ -129,7 +130,7 @@ img {
 }
 
 .menu-container {
-    width: 1300px;
+    width: 81.25rem;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -137,14 +138,14 @@ img {
 }
 
 .logo {
-    color: var(--primary-color);
+    color: var(--white-color);
     font-weight: var(--font-weight-bold);
     font-size: var(--h3-font-size);
     transition: all 0.3s;
 }
 
 .logo:hover {
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-menu {
@@ -256,14 +257,14 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 8rem 0;
-    max-width: 1300px;
+    max-width: 81.25rem;
     margin: auto;
 }
 
 .section__title {
     text-align: center;
     margin-bottom: 5rem;
-    
+
 }
 
 .cards-container {
@@ -276,7 +277,7 @@ img {
 
 .card {
     max-width: 415px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 }
 
@@ -345,7 +346,7 @@ img {
     font-size: var(--p-font-size);
 }
 
-.card__star{
+.card__star {
     font-size: var(--p-font-size);
     color: var(--secondary-color);
 }
@@ -377,7 +378,7 @@ img {
 
 .res-section__info {
     display: flex;
-    max-width: 1300px;
+    max-width: 81.25rem;
     gap: 3rem;
     margin-bottom: 4rem;
 }
@@ -405,8 +406,8 @@ img {
 
 .team-card {
     position: relative;
-    max-width: 415px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    max-width: 25.9rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
     overflow: hidden;
 }
@@ -467,12 +468,12 @@ img {
 
 .full-width--reservation {
     background-image: url(../images/reserve-bg.jpg);
-    
+
 }
 
 .form-container {
     background: var(--overlay);
-    width: 60%;
+    width: 73.2rem;
     display: flex;
 }
 
@@ -599,7 +600,7 @@ img {
     position: relative;
     width: 357px;
     height: 460px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -669,7 +670,7 @@ img {
     gap: 1.5rem;
     justify-content: space-between;
     width: 50%;
-    max-width: 1300px;
+    max-width: 81.25rem;
 }
 
 .footer__title,
@@ -685,3 +686,200 @@ img {
     line-height: 2;
 }
 
+/*------ Media Queries ------*/
+
+@media only screen and (max-width: 1439px) {
+
+    .nav-bar {
+        padding: 0 4rem;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 23.75rem;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        margin-bottom: 30px;
+    }
+
+    .res-section__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .res-section__text-container {
+        width: 80%;
+    }
+
+    .team-card {
+        max-width: 23.75rem;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .gallery__image-container {
+        width: 25%;
+    }
+
+    .gallery__image-container:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .footer__info-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+
+    :root {
+        --h4-font-size: 22px;
+    }
+
+    .card {
+        max-width: 18.75rem;
+    }
+
+    .card__score {
+        font-size: 16px;
+    }
+
+    .card__star,
+    .card__reviews {
+        font-size: 14px;
+    }
+
+    .team-card {
+        max-width: 18.75rem;
+    }
+
+    .form-container {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .team-card__info-container {
+        bottom: 0;
+        height: 6.5rem;
+    }
+
+    .blog-card {
+        width: 18.75rem;
+    }
+
+    .blog-card__info-container {
+        height: 10rem;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    :root {
+        --h1-font-size: 66px;
+        --h2-font-size: 46px;
+        --h3-font-size: 36px;
+        --h4-font-size: 22px;
+        --h5-font-size: 26px;
+        --h6-font-size: 18px;
+        --p-font-size: 16px;
+    }
+        
+    .form__text--highlight {
+        color: var(--secondary-color);
+        font-weight: var(--font-weight-semibold);
+    }
+    
+    .form__input {
+        width: 48%;
+    }
+    
+    .form__select {
+        width: 28%;
+    }
+    
+}
+
+@media only screen and (max-width: 799px) {
+    :root {
+        --h1-font-size: 50px;
+        --h2-font-size: 40px;
+    }
+
+    .res-section__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .res-section__video-container{
+        width: 100%;
+    }
+    
+    iframe {
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+
+    .gallery__image-container {
+        width: 50%;
+    }
+
+    .form {
+        padding: 3rem 1.5rem;
+    }
+
+    .form__input,
+    .form__select,
+    .date {
+        width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 599px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 30px;
+        --h3-font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    :root {
+        --h3-font-size: 25px;
+    }
+
+    .header__score,
+    .header__star,
+    .header__review-text {
+        font-size: 18px;
+    }
+
+    .card,
+    .team-card {
+        margin-bottom: 0;
+    }
+
+    .res-section__text-container {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 3rem 1.5rem;
+    }
+}
