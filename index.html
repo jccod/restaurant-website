@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,9 +17,7 @@
         <div class="toggle-menu" id="toggle-menu">
             <i class='bx bx-menu'></i>
         </div>
-        
-        
-    </div>
+        </div>
         <div class="menu-container">
             <a href="" class="logo">Feast</a>
             <ul class="main-menu" id="main-menu">
@@ -50,7 +49,7 @@
         </div>
     </nav>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" data-aos="fade-down">
             <div class="header">
                 <h1 class="header__main-title">Delicious Steaks</h1>
                 <div class="header__reviews">
@@ -73,12 +72,15 @@
                     <source src="/assets/video/restaurant2.mp4" type="video/mp4">
                 </video>
             </div>
+            <div class="overlay">
+
+            </div>
         </section>
 
         <section class="section" id="menu">
             <h2 class="section__title">Our Menu</h2>
             <div class="cards-container">
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/breakfast.jpg" alt="Morning Breakfast">
                         <span class="card__category">Breakfast</span>
@@ -100,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/pumpkin-soup.jpg" alt="Pumpkin Soup">
                         <span class="card__category">Starter</span>
@@ -122,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/steak.jpg" alt="Filet Mignon">
                         <span class="card__category">Knife & Fork</span>
@@ -144,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/shrimps.jpg" alt="Grilled Shrimps">
                         <span class="card__category">Knife and Fork</span>
@@ -166,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/burger.jpg" alt="">
                         <span class="card__category">Sandwiches</span>
@@ -188,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/kebab.jpg" alt="">
                         <span class="card__category">Starter</span>
@@ -210,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/roasted-salmon.jpg" alt="Pan Roasted Salmon">
                         <span class="card__category">Knife & Fork</span>
@@ -232,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/green-salad.jpg" alt="Green Salad">
                         <span class="card__category">Salads</span>
@@ -254,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card__img-container">
                         <img class="card__img" src="./assets/images/tiramisu.jpg" alt="Green Salad">
                         <span class="card__category">Desserts</span>
@@ -278,16 +280,16 @@
             </div>
         </section>
 
-        <section class="full-width full-width--restaurant" id="story">
+        <section class="full-width full-width--restaurant" id="story" data-aos="zoom-in">
             <div class="res-section__info">
-                <div class="res-section__video-container">
+                <div class="res-section__video-container" data-aos="fade-right">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/PZ4pctQMdg4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
                 </div>
-                <div class="res-section__text-container">
+                <div class="res-section__text-container" data-aos="fade-left">
                     <h2 class="res-section__title">Our Story</h2>
                     <p class="res-section__text">We pride ourselves on offering excellent service and a memorable dining
                         experience. Our team of experienced chefs and friendly staff are dedicated to making your visit
@@ -296,11 +298,11 @@
                         to serving you soon.</p>
                 </div>
             </div>
-            <a href="#reservation" class="btn btn--big btn--primary">Reserve a Table</a>
+            <a href="#reservation" class="btn btn--big btn--primary" data-aos="fade-up">Reserve a Table</a>
 
         </section>
 
-        <section class="section" id="team">
+        <section class="section" id="team" data-aos="flip-up">
             <h2 class="section__title">Our Team</h2>
             <div class="cards-container">
                 <div class="team-card">
@@ -311,7 +313,7 @@
                     </div>
                 </div>
 
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up">
                     <img class="team-card__img" src="assets/images/norman.jpg" alt="Executive Chef">
                     <div class="team-card__info-container">
                         <h4 class="team-card__name">Norman Bennett</h4>
@@ -319,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up">
                     <img class="team-card__img" src="assets/images/shawn.jpg" alt="Sous Chef">
                     <div class="team-card__info-container">
                         <h4 class="team-card__name">Shawn Chapman</h4>
@@ -327,7 +329,7 @@
                     </div>
                 </div>
 
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up">
                     <img class="team-card__img" src="assets/images/esther.jpg" alt="Pastry Chef">
                     <div class="team-card__info-container">
                         <h4 class="team-card__name">Esther Bowman</h4>
@@ -335,7 +337,7 @@
                     </div>
                 </div>
 
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up">
                     <img class="team-card__img" src="assets/images/beverley.jpg" alt="Barista">
                     <div class="team-card__info-container">
                         <h4 class="team-card__name">Beverly Patterson</h4>
@@ -343,7 +345,7 @@
                     </div>
                 </div>
 
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up">
                     <img class="team-card__img" src="assets/images/wayne.jpg" alt="">
                     <div class="team-card__info-container">
                         <h4 class="team-card__name">Wayne Romero</h4>
@@ -353,7 +355,7 @@
             </div>
         </section>
 
-        <section class="gallery" id="gallery">
+        <section class="gallery" id="gallery" data-aos="zoom-in-down">
             <div class="gallery__image-container">
                 <img class="gallery__image" src="./assets/images/restaurant-1.jpg" alt="">
             </div>
@@ -394,8 +396,8 @@
                 <img class="gallery__image" src="./assets/images/restaurant-10.jpg" alt="">
             </div>
         </section>
-        <section class="full-width full-width--reservation" id="reservation">
-            <div class="form-container">
+        <section class="full-width full-width--reservation" id="reservation" data-aos="zoom-out-up">
+            <div class="form-container" data-aos="zoom-in-right">
                 <form class="form" action="">
                     <h3 class="form__title">Online Reservation</h3>
                     <p class="form__text">Booking request <span class="form__text--highlight">+88-123-123456 </span> or
@@ -433,7 +435,7 @@
                     <textarea class="form__textarea" name="message" id="" cols="60" rows="10"></textarea>
                     <button class="btn btn--big btn--primary btn--full-width">Reserve a Table</button>
                 </form>
-                <div class="contact">
+                <div class="contact" data-aos="zoom-in-left">
                     <h3 class="contact__title">Contact Us</h3>
                     <p class="contact__label">Booking Request</p>
                     <p class="contact__phone">+88-123-123456</p>
@@ -460,7 +462,7 @@
         <section class="section" id="updates">
             <h2 class="section__title">News & Events</h2>
             <div class="cards-container">
-                <article class="blog-card">
+                <article class="blog-card" data-aos="fade-right">
                     <img class="blog-card__img" src="./assets/images/blog1.jpg" alt="Healthy meal">
                     <div class="blog-card__info-container">
                         <span class="blog-card__category">food</span>
@@ -468,7 +470,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" data-aos="fade-down">
                     <img class="blog-card__img" src="./assets/images/blog3.jpg" alt="Hand-made pasta">
                     <div class="blog-card__info-container">
                         <span class="blog-card__category">events</span>
@@ -476,7 +478,7 @@
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" data-aos="fade-left">
                     <img class="blog-card__img" src="./assets/images/blog4.jpg" alt="Shakshuka">
                     <div class="blog-card__info-container">
                         <span class="blog-card__category">recipes</span>
@@ -484,10 +486,10 @@
                     </div>
                 </article>
             </div>
-            <a href="http://" class="btn btn--big btn--blog">View our Blog</a>
+            <a href="http://" class="btn btn--big btn--blog" data-aos="fade-up-right">View our Blog</a>
         </section>
 
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-up">
             <div class="footer__info-container">
                 <div class="footer__column">
                     <h5 class="footer__title">Location</h5>
@@ -516,6 +518,10 @@
         </footer>
     </main>
     <script src="/assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
